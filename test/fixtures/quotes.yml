@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  saying: MyString
+  said_by: MyString
+  votes: 1
+  year: 1
+  notes: MyText
+
+two:
+  saying: MyString
+  said_by: MyString
+  votes: 1
+  year: 1
+  notes: MyText
