@@ -1,9 +1,9 @@
 <h1 class="d-flex justify-content-center">Quotes</h1>
 <%= link_to new_quote_path, class: "btn btn-primary" do %>
  <i class="bi bi-plus" ></i> New Quote
- <%= link_to 'Sort By Saying', quotes_sort_by_saying_length_path %>
-  <%= link_to 'Sort By Said By', quotes_sort_by_said_by_length_path %>
-   <%= link_to 'Sort By Year', quotes_sort_by_year_length_path %>
+ <%= link_to 'Sort Quote', quotes_sort_by_saying_length_path, class: "btn btn-primary" %>
+  <%= link_to 'Sort Quote By', quotes_sort_by_said_by_length_path, class: "btn btn-primary" %>
+   <%= link_to 'Sort By Year', quotes_sort_by_year_length_path, class: "btn btn-primary" %>
 <% end %>
 
 <table class="table">
@@ -12,8 +12,8 @@
 <th>Quote</th>
 <th>Quote by</th>
 <th>Votes</th>
-<th>Year of Quote</th>
-<th>Info</th>
+<th>Year</th>
+<th>Facts</th>
 <th></th>
 <th></th>
 <thead>

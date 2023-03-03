@@ -50,10 +50,10 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_03_051646) do
   end
 
   create_table "quotes", force: :cascade do |t|
-    t.string "saying"
-    t.string "said_by"
+    t.string "saying_length"
+    t.string "said_by_length"
     t.integer "votes"
-    t.integer "year"
+    t.integer "year_length"
     t.text "notes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
