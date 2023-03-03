@@ -21,10 +21,10 @@
   <tbody>
     <% @quotes.each do |quote| %>
       <tr>
-        <td><%= quote.saying %></td>
-        <td><%= quote.said_by %></td>
+        <td><%= quote.saying_length %></td>
+        <td><%= quote.said_by_length %></td>
         <td><%= quote.votes %></td>
-        <td><%= quote.year %></td>
+        <td><%= quote.year_length %></td>
         <td><%= quote.notes %></td>
         <td><%= link_to 'Edit', edit_quote_path(quote), class: "btn btn-primary" %></td>
         <td><%= button_to 'Delete', quote, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
