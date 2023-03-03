@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
   resources :quotes do
-    member do
-      put 'vote'
-    end
-  root 'quotes#index'
-end
+  end
+      
+    
+      get 'quotes/sort_by_saying_length'
+      get 'quotes/sort_by_said_by_length'
+      get 'quotes/sort_by_year_length'
+
+root 'quotes#index'
 end

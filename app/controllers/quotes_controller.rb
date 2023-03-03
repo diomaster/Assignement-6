@@ -19,6 +19,9 @@ class QuotesController < ApplicationController
   def edit
   end
 
+  def vote
+  end
+
   # POST /quotes or /quotes.json
   def create
     @quote = Quote.new(quote_params)
@@ -65,6 +68,6 @@ class QuotesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def quote_params
-      params.require(:quote).permit(:saying, :said_by, :votes, :year, :notes)
+      params.require(:quote).permit(:saying_length, :said_by_length, :year_length, :saying, :said_by, :votes, :year, :notes)
     end
 end

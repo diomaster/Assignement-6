@@ -12,13 +12,13 @@
   <% end %>
 
   <div>
-    <%= form.label :saying, style: "display: block" %>
-    <%= form.text_field :saying %>
+    <%= form.label :saying_length, style: "display: block" %>
+    <%= form.text_field :saying, :saying %>
   </div>
 
   <div>
-    <%= form.label :said_by, style: "display: block" %>
-    <%= form.text_field :said_by %>
+    <%= form.label :said_by_length, style: "display: block" %>
+    <%= form.text_field :said_by, :said_by %>
   </div>
 
   <div>
@@ -27,13 +27,13 @@
   </div>
 
   <div>
-    <%= form.label :year, style: "display: block" %>
-    <%= form.number_field :year %>
+    <%= form.label :year_length, style: "display: block" %>
+    <%= form.number_field :year, :year %>
   </div>
 
-  <div>
-    <%= form.label :notes, style: "display: block" %>
-    <%= form.text_area :notes %>
+ <div class="field">
+    <%= form.label :content %>
+    <%= form.rich_text_area :content %>
   </div>
 
   <div>
